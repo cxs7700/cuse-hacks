@@ -17,9 +17,9 @@ const HeaderCard = (props) => {
   
   const Container = styled.View`
     background: white;
-    width: 315px;
-    border-radius: 50px;
-    height: 280px;
+    width: 75px;
+    border-radius: 20px;
+    height: 75px;
     margin-left: 20px;
     margin-top: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
@@ -27,9 +27,9 @@ const HeaderCard = (props) => {
   
   const Cover = styled.View`
     width: 100%;
-    height: 200px;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    height: 50px;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
     overflow: hidden;
   `
   
