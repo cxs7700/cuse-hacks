@@ -23,15 +23,15 @@ const DoggoMessage = props => {
 const Container = styled.View`
     flex-direction: column;
     flex: 1;
+    position: absolute;
+    bottom: -85;
+    right: 15;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
   `
   
   const Image = styled.Image`
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    width: 75px;
+    height: 80px;
     align-self: flex-end;
   `
 
