@@ -35,6 +35,7 @@ export default class Home extends React.Component {
                     </TouchableOpacity>
                 </View>
             </View>
+            <Text style={styles.weatherText}>Weather</Text>
             <Weather />
         </ScrollView>
         )
@@ -46,6 +47,7 @@ export default class Home extends React.Component {
     container: {
     //   backgroundColor: 'black',
       width: '100%'
+      
     },
     cardLayout: {
         flex: 1,
@@ -60,6 +62,13 @@ export default class Home extends React.Component {
         marginLeft: 20,
         color: 'black'
     },
+    weatherText: {
+        marginTop: 80,
+        marginLeft: 20,
+        marginBottom: 0,
+        paddingBottom: 0,
+        fontSize: 25
+    }
 
   });
   
