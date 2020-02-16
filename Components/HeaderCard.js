@@ -16,20 +16,21 @@ const HeaderCard = (props) => {
   };
   
   const Container = styled.View`
-    background: white;
-    width: 315px;
-    border-radius: 50px;
-    height: 280px;
+    width: 155px;
+    border-radius: 20px;
+    height: 10px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 20px; 
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
   `
   
   const Cover = styled.View`
     width: 100%;
-    height: 200px;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    height: 50px;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
     overflow: hidden;
   `
   
@@ -43,10 +44,11 @@ const HeaderCard = (props) => {
   
   const Title = styled.Text`
     color: white;
-    font-size: 24px;
+    font-size: 20px;
+    font-family: 'Avenir';
     font-weight: bold;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 15px;
+    margin-left: 30px;
     width: 170px;
   `
   
