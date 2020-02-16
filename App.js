@@ -31,7 +31,6 @@ function MyStack(){
             <Stack.Screen name='Welcome' component={Home} />
             <Stack.Screen name='Pastdays' component={Pastday} />
             
-            
         </Stack.Navigator>
     )
 
