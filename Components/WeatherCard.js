@@ -1,6 +1,6 @@
-import React from 'react';
+import React from './node_modules/react';
 import { TouchableOpacity, View, Text } from 'react-native'
-import styled from 'styled-components'
+import styled from './node_modules/styled-components'
 
 // Receives props as data
 const WeatherCard = props => {

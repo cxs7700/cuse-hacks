@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { ScrollView, Text, View, TouchableOpacity } from 'react-native'
 import WeatherCard from './WeatherCard';
-import axios from 'axios'
+import axios from '.axios'
 import Icy from './Icy'
 
 export default class Weather extends React.Component {

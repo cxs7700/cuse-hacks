@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View , TouchableOpacity} from 'react-native';
 import HeaderCard from './HeaderCard';
-import {Navigation} from '@react-navigation/native';
-import Pastday from '../Components/Pastday';
-import firebase from 'firebase';
+import {Navigation} from '.@react-navigation/native';
+import Pastday from './Pastday';
+import firebase from './firebase';
 
 
 const navigate = ({ Navigation }) => {

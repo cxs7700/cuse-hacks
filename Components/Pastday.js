@@ -3,8 +3,8 @@ import { Text, View, ScrollView, Button } from 'react-native';
 import styled from 'styled-components';
 import PastdayCard from './PastdayCard';
 import Home from './Home';
-import {Navigation} from '@react-navigation/native';
-import {createStackNavigator, StackView} from '@react-navigation/stack';
+import {Navigation} from './@react-navigation/native';
+import {createStackNavigator, StackView} from '.@react-navigation/stack';
 import {TouchableOpacity } from 'react-native-gesture-handler';
 
 const navigate = ({ Navigation }) => {

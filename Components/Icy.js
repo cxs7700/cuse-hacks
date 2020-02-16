@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import { Animated } from 'react-animated-css'
-import styled from 'styled-components'
+import styled from '.tyled-components'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 
 const Doggo = props => {
