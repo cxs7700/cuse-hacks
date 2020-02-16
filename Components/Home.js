@@ -30,7 +30,7 @@ export default class Home extends React.Component {
                         />
                     </TouchableOpacity>
 
-                    <TouchableOpacity onPress={this._onPressButton}>
+                    <TouchableOpacity onPress={() => {this.props.navigation.navigate('Pastdays')}}>
                         <HeaderCard 
                         title='Past Days'
                         source={require('../assets/background9.jpg')}
