@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import HeaderCard from './HeaderCard';
+import styled from 'styled-components';
 
 export default function Home() {
     return (
@@ -19,8 +20,11 @@ export default function Home() {
             source={require('../assets/background9.jpg')}
             />
         </View>
+        
       
       </View>
+    
+      
     );
   }
 
@@ -34,7 +38,12 @@ export default function Home() {
       justifyContent: 'flex-start',
     },
     cardLayout: {
-        flexDirection: 'row',
-    }
+      flexDirection: 'row',
+    },
+ 
   });
+ 
+  
+
+  
   
