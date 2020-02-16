@@ -28,8 +28,9 @@ const Stack = createStackNavigator();
 function MyStack(){
     return (
         <Stack.Navigator>
-            <Stack.Screen name='Welcome' component={Home} />
             <Stack.Screen name='Pastdays' component={Pastday} />
+            <Stack.Screen name='Welcome' component={Home} />
+            
             
             
         </Stack.Navigator>
