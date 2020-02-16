@@ -1,8 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View , TouchableOpacity} from 'react-native';
 import HeaderCard from './HeaderCard';
-import {Navigation} from '@react-navigation/native';
-import Pastday from '../Components/Pastday';
 import firebase from 'firebase';
 
 
@@ -38,6 +36,8 @@ export default class Home extends React.Component {
 
     }
 
+    
+
     render() {
         return (
         <View style={styles.back}>
@@ -47,7 +47,7 @@ export default class Home extends React.Component {
                 
                 <View style={styles.cardLayout}>
 
-                    <TouchableOpacity onPress={this._onPressButton}>
+                    <TouchableOpacity onPress={() => {this.props.navigation.navigate('Enter')}}>
                         <HeaderCard
                         title='New Day'
                         source={require('../assets/background16.jpg')}

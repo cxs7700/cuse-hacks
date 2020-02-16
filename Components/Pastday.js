@@ -20,7 +20,7 @@ export default class Pastday extends React.Component{
                 <TitleBar>
                     <Title >Past Days</Title>
                 </TitleBar>
-                <TouchableOpacity onPress={() => {this.props.navigation.navigate('Welcome')}}>
+                <TouchableOpacity >
                     <PastdayCard title='Tuesday' source={require('../assets/sunny.png')} />
                 </TouchableOpacity>
                 <TouchableOpacity >
@@ -47,7 +47,7 @@ const TitleBar = styled.View`
 `
 
 const Title = styled.Text`
-  font-size: 60px;
+  font-size: 50px;
   color: black;
   font-weight: bold;
   text-align: left;
