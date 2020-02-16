@@ -22,7 +22,7 @@ const WeatherCard = props => {
 const Container = styled.View`
     background: white;
     width: 315px;
-    border-radius: 50px;
+    border-radius: 15px;
     height: 280px;
     margin-left: 20px;
     margin-top: 20px;
