@@ -3,16 +3,28 @@ import { Text, View, ScrollView, Button } from 'react-native';
 import styled from 'styled-components';
 import PastdayCard from './PastdayCard';
 import Home from './Home';
-import {Navigation} from './@react-navigation/native';
-import {createStackNavigator, StackView} from '.@react-navigation/stack';
+import {Navigation} from '@react-navigation/native';
+import {createStackNavigator, StackView} from '@react-navigation/stack';
 import {TouchableOpacity } from 'react-native-gesture-handler';
+import firebase from 'firebase';
 
 const navigate = ({ Navigation }) => {
 
 }
 
-export default class Pastday extends React.Component{
-    render(){
+export default class Pastday extends React.Component{    
+    // componentDidMount() {
+    //     this.getData()
+    // }
+    
+    // getData = async() => {
+    //     const ref = firebase.database().ref('users');
+    //     const snapshot = await ref.orderByKey().endAt('004').once('value');
+        
+    //     console.log(snapshot.val()['004'])
+    // }
+    
+    render() {
         return(
             
             <Container>
@@ -20,7 +32,7 @@ export default class Pastday extends React.Component{
                 <TitleBar>
                     <Title >Past Days</Title>
                 </TitleBar>
-                <TouchableOpacity onPress={() => {this.props.navigation.navigate('Welcome')}}>
+                <TouchableOpacity onPress={() => {this.props.navigation.navigate('Single Past Day')}}>
                     <PastdayCard title='Tuesday' source={require('../assets/sunny.png')} />
                 </TouchableOpacity>
                 <TouchableOpacity >
