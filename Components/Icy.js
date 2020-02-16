@@ -31,7 +31,7 @@ const Container = styled.View`
     flex-direction: column;
     flex: 1;
     position: absolute;
-    bottom: -85px;
+    bottom: -70px;
     right: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
   `

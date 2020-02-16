@@ -45,9 +45,8 @@ export default class Home extends React.Component {
 
   const styles = StyleSheet.create({
     container: {
-    //   backgroundColor: 'black',
-      width: '100%'
-      
+      width: '100%',
+      marginBottom: 80,
     },
     cardLayout: {
         flex: 1,
@@ -63,11 +62,10 @@ export default class Home extends React.Component {
         color: 'black'
     },
     weatherText: {
-        marginTop: 80,
-        marginLeft: 20,
-        marginBottom: 0,
-        paddingBottom: 0,
-        fontSize: 25
+        left: 20,
+        top: 190,
+        fontSize: 25,
+        position: "absolute",
     }
 
   });
