@@ -1,7 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, Text, View , TouchableOpacity} from 'react-native';
 import HeaderCard from './HeaderCard';
-import styled from 'styled-components';
 
 export default class Home extends React.Component {
 
@@ -24,32 +23,32 @@ export default class Home extends React.Component {
                 
                 <View style={styles.cardLayout}>
 
-                    <TouchableHighlight underlayColor='blue' onPress={this._onPressButton}>
+                    <TouchableOpacity onPress={this._onPressButton}>
                         <HeaderCard
                         title='New Day'
                         source={require('../assets/background16.jpg')}
                         />
-                    </TouchableHighlight>
+                    </TouchableOpacity>
 
-                    <TouchableHighlight underlayColor='blue' onPress={this._onPressButton}>
+                    <TouchableOpacity onPress={this._onPressButton}>
                         <HeaderCard 
                         title='Past Days'
                         source={require('../assets/background9.jpg')}
                         />
-                    </TouchableHighlight>
+                    </TouchableOpacity>
                 </View>
             
             </View>
         </View>
-    );
+        )
+    }
   }
-}
 
 
-const styles = StyleSheet.create({
+  const styles = StyleSheet.create({
     container: {
     //   backgroundColor: 'black',
-        width: '100%'
+      width: '100%'
     },
     cardLayout: {
         flex: 1,
@@ -64,4 +63,6 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         color: 'black'
     },
-})
+
+  });
+  
