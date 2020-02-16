@@ -32,7 +32,6 @@ function MyStack(){
             <Stack.Screen name='Welcome' component={Home} />
             
             
-            
         </Stack.Navigator>
     )
 
