@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View , TouchableHighlight} from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import HeaderCard from './HeaderCard';
-import {NavigationContainer} from '@react-navigation/native';
+import styled from 'styled-components';
 
 export default class Home extends React.Component {
 
@@ -41,15 +41,15 @@ export default class Home extends React.Component {
             
             </View>
         </View>
-        )
-    }
+    );
   }
+}
 
 
-  const styles = StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
     //   backgroundColor: 'black',
-      width: '100%'
+        width: '100%'
     },
     cardLayout: {
         flex: 1,
@@ -64,6 +64,4 @@ export default class Home extends React.Component {
         marginLeft: 20,
         color: 'black'
     },
-
-  });
-  
+})
