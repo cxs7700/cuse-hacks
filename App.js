@@ -1,16 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View , ScrollView} from 'react-native';
-import Home from './Components/Home';
+import Home from './components/Home';
+import Weather from './components/Weather';
 
 
 export default function App() {
   
-  
   return (
     <ScrollView style={styles.container}>
       <Home />
+      <Weather />
     </ScrollView>
-    
   );
 }
 

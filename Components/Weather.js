@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ScrollView, Text, TouchableOpacity } from 'react-native'
+import { ScrollView, Text, View, TouchableOpacity } from 'react-native'
 import WeatherCard from './WeatherCard';
 import axios from 'axios'
+import Icy from './Icy'
 
 export default class Weather extends React.Component {
   constructor(props) {
@@ -43,29 +44,31 @@ export default class Weather extends React.Component {
   
   manipulateData = data => {
     let arr = []
-    for (let i = 1; i < data.length; i += 8) {
+    for (let i = 0; i < data.length; i += 8) {
       arr.push(data[i])
     }
     return arr
   }
   
   render() {
-    
     return(
-      <ScrollView>
+      <View style={{paddingTop: 60}}>
+        <ScrollView style={{ flexFlow: "row", padding: 10, paddingBottom: 30, paddingLeft: 0, paddingTop: 30 }} horizontal={true} showsHorizontalScrollIndicator={false}>
         {
-          this.state.weather.map((forecast,index) => {
-            return ( 
-              <WeatherCard 
-                key={index} 
-                date={forecast.dt_txt} 
-                temp={forecast.main['temp']} 
-                condition={forecast.weather[0]['main']}
-              /> 
-            )
-          })
-        }
-      </ScrollView>
+            this.state.weather.map((forecast,index) => {
+              return ( 
+                <WeatherCard 
+                  key={index} 
+                  date={forecast.dt} 
+                  temp={forecast.main['temp']} 
+                  condition={forecast.weather[0]['main']}
+                /> 
+              )
+            })
+          }
+        </ScrollView>
+        <Icy source={require('../assets/doggo.png')}/>
+      </View>
     )
   }
 }
