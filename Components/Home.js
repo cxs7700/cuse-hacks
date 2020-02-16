@@ -39,13 +39,16 @@ export default class Home extends React.Component {
 
     }
 
+    
+
     render() {
         return (
         <ScrollView style={styles.back}>
             <Text style={styles.text}>Hey, User!</Text>
             <View style={styles.container}>
                 <View style={styles.cardLayout}>
-                    <TouchableOpacity onPress={this._onPressButton}>
+
+                    <TouchableOpacity onPress={() => {this.props.navigation.navigate('Enter')}}>
                         <HeaderCard
                         title='New Day'
                         source={require('../assets/background16.jpg')}
