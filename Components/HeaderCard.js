@@ -4,14 +4,14 @@ import { Text, View , TouchableOpacity } from 'react-native';
 
 const HeaderCard = (props) => {
     return (
-      <TouchableOpacity>
+      
         <Container>
           <Cover>
             <Image source={props.source} />
             <Title>{props.title}</Title>
           </Cover>
         </Container>
-      </TouchableOpacity>
+      
     )
   };
   

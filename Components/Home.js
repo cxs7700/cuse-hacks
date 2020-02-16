@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View , TouchableHighlight} from 'react-native';
+import { StyleSheet, Text, View , TouchableOpacity} from 'react-native';
 import HeaderCard from './HeaderCard';
 import {NavigationContainer} from '@react-navigation/native';
 
@@ -14,7 +14,7 @@ export default class Home extends React.Component {
     _onPressButton = () => {
         alert('Button presses!');
     }
-
+   
     render() {
         return (
         <View style={styles.back}>
@@ -24,19 +24,19 @@ export default class Home extends React.Component {
                 
                 <View style={styles.cardLayout}>
 
-                    <TouchableHighlight underlayColor='blue' onPress={this._onPressButton}>
+                    <TouchableOpacity onPress={this._onPressButton}>
                         <HeaderCard
                         title='New Day'
                         source={require('../assets/background16.jpg')}
                         />
-                    </TouchableHighlight>
+                    </TouchableOpacity>
 
-                    <TouchableHighlight underlayColor='blue' onPress={this._onPressButton}>
+                    <TouchableOpacity onPress={this._onPressButton}>
                         <HeaderCard 
                         title='Past Days'
                         source={require('../assets/background9.jpg')}
                         />
-                    </TouchableHighlight>
+                    </TouchableOpacity>
                 </View>
             
             </View>
