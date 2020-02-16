@@ -7,12 +7,26 @@ const WeatherCard = props => {
   var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   let date = new Date(props.date*1000).getDay();
   
+  let sourceImage = ''
+  if (props.condition == "Snow") {
+    sourceImage = require('../assets/snow.png')
+  } else if (props.condition == 'Thunderstorm') {
+    sourceImage = require('../assets/cloud.png')
+  } else if (props.condition == 'Clouds') {
+    sourceImage = require('../assets/cloud.png')
+  } else if (props.condition == 'Rain') {
+    sourceImage = require('../assets/rain.png')
+  } else if (props.condition == 'Clear') {
+    sourceImage = require('../assets/sunny.png')
+  } else {sourceImage = require('../assets/else.png')}
+  
   return (
     <Container>
       <Cover>
-        <Title>{days[date]}</Title>
-        <Title>{Math.floor(props.temp) + 'ºF'}</Title>
-        <Title>{props.condition}</Title>
+        <Image source={sourceImage} />
+        <Weekday>{days[date]}</Weekday>
+        <Temperature>{Math.floor(props.temp) + 'ºF'}</Temperature>
+        <Condition>{props.condition}</Condition>
       </Cover>
     </Container>
   )
@@ -21,10 +35,9 @@ const WeatherCard = props => {
 const Container = styled.View`
   background: white;
   width: 200px;
+  height: 250px;
   border-radius: 15px;
-  height: 300px;
   margin-left: 20px;
-  margin-top: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 `
   
@@ -32,24 +45,38 @@ const Cover = styled.View`
   width: 100%;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
-
 `
   
 const Image = styled.Image`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 200px;
+  height: 250px;
+  border-radius: 15px;
 `
   
-const Title = styled.Text`
+const Weekday = styled.Text`
   color: black;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
-  margin-top: 20px;
+  position: absolute;
+  top: 20px;
   margin-left: 20px;
-  width: 170px;
+`
+
+const Temperature = styled.Text`
+  font-size: 16px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-weight: 500;
+  color: white;
+`
+
+const Condition = styled.Text`
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: 500;
 `
 
 export default WeatherCard

@@ -14,16 +14,19 @@
     "axios": "^0.19.2",
     "expo": "~36.0.0",
     "firebase": "^7.8.2",
+    "formik": "^2.1.4",
     "react": "~16.9.0",
     "react-animated-css": "^1.2.1",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+    "react-native-elements": "^1.2.7",
     "react-native-gesture-handler": "^1.6.0",
     "react-native-reanimated": "^1.7.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.0.0-beta.4",
     "react-native-web": "~0.11.7",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "tcomb-form-native": "git+https://github.com/gcanti/tcomb-form-native.git"
   },
   "devDependencies": {
     "babel-preset-expo": "~8.0.0",

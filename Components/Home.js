@@ -1,9 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View , TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View , TouchableOpacity, ScrollView} from 'react-native';
 import HeaderCard from './HeaderCard';
 import {Navigation} from '@react-navigation/native';
-import Pastday from '../Components/Pastday';
+import Pastday from './Pastday';
 import firebase from 'firebase';
+import Weather from './Weather'
 
 
 const navigate = ({ Navigation }) => {
@@ -38,16 +39,16 @@ export default class Home extends React.Component {
 
     }
 
+    
+
     render() {
         return (
-        <View style={styles.back}>
+        <ScrollView style={styles.back}>
             <Text style={styles.text}>Hey, User!</Text>
-
             <View style={styles.container}>
-                
                 <View style={styles.cardLayout}>
 
-                    <TouchableOpacity onPress={this._onPressButton}>
+                    <TouchableOpacity onPress={() => {this.props.navigation.navigate('Enter')}}>
                         <HeaderCard
                         title='New Day'
                         source={require('../assets/background16.jpg')}
@@ -61,9 +62,10 @@ export default class Home extends React.Component {
                         />
                     </TouchableOpacity>
                 </View>
-            
             </View>
-        </View>
+            <Text style={styles.weatherText}>Weather</Text>
+            <Weather />
+        </ScrollView>
         )
     }
   }
@@ -71,8 +73,8 @@ export default class Home extends React.Component {
 
   const styles = StyleSheet.create({
     container: {
-    //   backgroundColor: 'black',
-      width: '100%'
+      width: '100%',
+      marginBottom: 80,
     },
     cardLayout: {
         flex: 1,
@@ -83,10 +85,16 @@ export default class Home extends React.Component {
     },
     text: {
         fontSize: 25,
-        marginTop: 70,
+        marginTop: 20,
         marginLeft: 20,
         color: 'black'
     },
+    weatherText: {
+        left: 20,
+        top: 190,
+        fontSize: 25,
+        position: "absolute",
+    }
 
   });
   

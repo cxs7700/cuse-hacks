@@ -52,7 +52,7 @@ export default class Weather extends React.Component {
   
   render() {
     return(
-      <View style={{paddingTop: 60}}>
+      <View style={{paddingTop: 50}}>
         <ScrollView style={{ flexFlow: "row", padding: 10, paddingBottom: 30, paddingLeft: 0, paddingTop: 30 }} horizontal={true} showsHorizontalScrollIndicator={false}>
         {
             this.state.weather.map((forecast,index) => {
