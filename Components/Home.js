@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View , TouchableOpacity} from 'react-native';
 import HeaderCard from './HeaderCard';
-import {NavigationContainer} from '@react-navigation/native';
 
 export default class Home extends React.Component {
 

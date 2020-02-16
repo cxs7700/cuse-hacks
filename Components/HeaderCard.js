@@ -1,16 +1,15 @@
 import React from 'react';
 import styled from 'styled-components'
-import { Text, View , TouchableOpacity } from 'react-native';
 
 const HeaderCard = (props) => {
     return (
-      
-        <Container>
-          <Cover>
-            <Image source={props.source} />
-            <Title>{props.title}</Title>
-          </Cover>
-        </Container>
+  
+      <Container>
+        <Cover>
+          <Image source={props.source} />
+          <Title>{props.title}</Title>
+        </Cover>
+      </Container>
       
     )
   };
