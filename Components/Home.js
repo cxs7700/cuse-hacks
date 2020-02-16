@@ -13,7 +13,7 @@ export default class Home extends React.Component {
     _onPressButton = () => {
         alert('Button presses!');
     }
-   
+
     render() {
         return (
         <View style={styles.back}>
