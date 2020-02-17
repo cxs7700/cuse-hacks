@@ -40,7 +40,6 @@ export default class SinglePastDay extends React.Component {
   getData = async() => {
     const ref = firebase.database().ref('users');
     const snapshot = await ref.orderByKey().endAt('004').once('value');
-    console.log(snapshot.val()['004'])
     this.setState({
       work: snapshot.val()['004'].name,
       time: snapshot.val()['004'].time,
