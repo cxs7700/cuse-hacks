@@ -1,5 +1,7 @@
 # cuse-hacks
-React Native application that won "Best Failed Hack" award at CuseHacks 2020
+React Native application that won "Best Failed Hack" award at CuseHacks 2020.
+
+<br />
 
 To run this project, open the project directory and run:
 
