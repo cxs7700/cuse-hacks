@@ -1,5 +1,5 @@
 # cuse-hacks
-React Native application that won "Best Failed Hack" award at CuseHacks 2020.
+Mobile application that won "Best Failed Hack" award at CuseHacks 2020.
 
 <br />
 
