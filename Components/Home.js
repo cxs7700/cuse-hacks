@@ -26,8 +26,8 @@ export default class Home extends React.Component {
           };
           // Initialize Firebase
           firebase.initializeApp(firebaseConfig);
-
-          firebase.database().ref('users').on('value', (data) =>  {
+            
+          firebase.database().ref('users').once('value', (data) =>  {
               data.toJSON;
           })
     }

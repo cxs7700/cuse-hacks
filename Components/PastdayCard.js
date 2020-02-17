@@ -3,6 +3,7 @@ import { Text, View, ScrollView, Button } from 'react-native';
 import { TouchableOpacity } from 'react-native';
 import styled from 'styled-components';
 
+
 const PastdayCard = (props) => (
       <Container>
         <Cover>

@@ -35,10 +35,10 @@ export default class Pastday extends React.Component{
                 <TouchableOpacity onPress={() => {this.props.navigation.navigate('Single Past Day')}}>
                     <PastdayCard title='Tuesday' source={require('../assets/sunny.png')} />
                 </TouchableOpacity>
-                <TouchableOpacity >
+                <TouchableOpacity onPress={() => {this.props.navigation.navigate('Single Past Day')}} >
                     <PastdayCard title='Wednesday' source={require('../assets/snow.png')}/>
                 </TouchableOpacity>
-                <TouchableOpacity >
+                <TouchableOpacity onPress={() => {this.props.navigation.navigate('Single Past Day')}} >
                     <PastdayCard title='Thursday' source={require('../assets/rain.png')}/>
                 </TouchableOpacity>
 
