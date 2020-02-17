@@ -63,7 +63,7 @@ export default class SinglePastDay extends React.Component {
       <ScrollView>
         <Container>
           <Cover>
-            <Image source={require('/Users/samin/Desktop/cuse/cuse-hacks/assets/86498079_597903351060007_3048092995246096384_n.png')} />
+            <Image source={require('../assets/86498079_597903351060007_3048092995246096384_n.png')} />
             <Location>{this.state.location}</Location>
             <Work>{this.state.work}</Work>
             <Time>{this.state.time}</Time>
