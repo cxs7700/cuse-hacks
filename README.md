@@ -1,8 +1,5 @@
 # cuse-hacks
 Mobile application that won the "Best Failed Hack" award at CuseHacks 2020.
-
-<br />
-
 https://devpost.com/software/slate-bdrkys
 
 <br />
